@@ -7,9 +7,8 @@
     align-items: center;
     justify-content: space-between;
     font-family: 'Google Sans';
-    font-weight: 400;
-    font-size: 1.0625em;
-    line-height: 22px;
+    font-weight: 500;
+    font-size: $small;
     color: $dark-grey-color;
 }
 
@@ -27,6 +26,7 @@
         justify-content: space-between;
     }
     &__item a{
+        font-weight: 500;
         color: $dark-grey-color;
     }
 }
