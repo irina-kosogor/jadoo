@@ -1,0 +1,13 @@
+.plane {
+    position: absolute;
+   
+   &__left {
+    top: 8vh;
+    right: 42vw;
+   }
+   &__right {
+    top: 15vh;
+    right: 10vw;
+    z-index: -1;
+   }
+}

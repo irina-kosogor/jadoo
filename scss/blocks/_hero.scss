@@ -1,7 +1,11 @@
 .hero {
-    padding: 130px 0 210px 0;
-    background: url('../../images/hero-traveller.png') top 35% right 20%/780px no-repeat;
-
+    min-height: calc(100vh - 90px);
+    background: url('../../images/hero-traveller.png') top 2vh right 10vw/calc(100vh - 90px) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    
     &__content {
         width: 50%;
     }
