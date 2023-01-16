@@ -5,18 +5,19 @@ $grey-color: rgba(94, 98, 130, 1);
 $dark-grey-color: rgba(33, 40, 50, 1);
 $light-grey-color: rgba(104, 109, 119, 1);
 $white-color: rgba(255, 255, 255, 1);
-$dark-blue-color:  rgba(24, 30, 75, 1);
+$blue-color: rgba(30, 29, 76, 1);
+$dark-blue-color:  rgba(20, 24, 62, 1);
 $red-color: rgba(223, 105, 81, 1);
 $yellow-color: rgba(241, 165, 1, 1);
+$light-yellow-color: rgba(255, 241, 218, 1);
 $light-violet-color: rgba(223, 215, 249, 1);
 
 
 //Font-size
 
-$extra-small: 1em;
-$small: 1.0625em;
-$small-to-medium: 1.25em;
-$medium: 30px;
-$medium-to-large: 46px;
-$large: 3.125em;
-$extra-large: 5.25em;
+$fs-16: 1em;
+$fs-17: 1.0625em;
+$fs-18: 1.125em;
+$fs-20: 1.25em;
+$fs-50: 3.125em;
+$fs-84: 5.25em;

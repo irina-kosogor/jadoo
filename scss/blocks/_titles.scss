@@ -1,0 +1,18 @@
+.subtitle-primary {
+    color: $grey-color;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: $fs-18;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title-primary {
+    font-family: 'Volkhov';
+    font-size: $fs-50;
+    line-height: 64px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $dark-blue-color;
+}

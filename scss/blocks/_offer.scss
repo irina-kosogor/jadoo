@@ -1,0 +1,91 @@
+.offer {
+    padding: 104px 0 204px 0;
+    background: url('../../images/decore_offer.svg') top 104px right 5vw no-repeat;
+    &__sutitle {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 108px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 100px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+    &__item-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 30px;
+        width: 130px;
+        height: 95px;
+
+        &_satelite {
+            background: url('../../icons/satellite-dish.svg') center center/100% no-repeat;
+            width: 70px;
+            height: 70px;
+            &::after {
+                @include after-rectangle;
+                top: 40%;
+                left: 55%;
+                transform: rotate(-180deg);
+            }
+        }
+        &_plane {
+            background: url('../../icons/plane.svg') center center/100% no-repeat;
+            width: 130px;
+            height: 95px;
+            &::after {
+                @include after-rectangle;
+                top: 10%;
+                left: 20%;
+            }
+        }
+        &_micorphone {
+            background: url('../../icons/microphone.png') center center/100% no-repeat;
+            width: 40px;
+            height: 70px;
+            &::after {
+                @include after-rectangle;
+                top: 10%;
+                left: 50%;
+            }
+        }
+        &_power-supply {
+            background: url('../../icons/power-supply.svg') center center/100% no-repeat;
+            width: 50px;
+            height: 50px;
+            &::after {
+                @include after-rectangle;
+                top: 40%;
+                left: 50%;
+            }
+        }
+    }
+    &__content-title {
+        color: $blue-color;
+        font-family: 'Google Sans';
+        font-weight: 400;
+        font-size: $fs-20;
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+    &__content-text {
+        color: $grey-color;
+        font-weight: 500;
+        line-height: 26px;
+    }
+}
