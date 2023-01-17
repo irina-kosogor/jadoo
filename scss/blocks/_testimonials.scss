@@ -1,0 +1,57 @@
+.testimonials {
+    margin-top: 200px;
+    // remove later
+    margin-bottom: 40px;
+    &__wrapper {
+        display: flex;
+        gap: 124px;
+    }
+}
+
+.testimonials-titles {
+    width: 410px;
+    &__subtitle {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+    &__title {
+        text-align: left;
+    }
+}
+
+.testimonials-card {
+    width: 505px;
+    @include box-shadow;
+    padding: 28px 34px;
+    border-radius: 10px;
+    background: $white-color;
+    margin-top: 27px;
+    position: relative;
+    color: $grey-color;
+    &::before {
+        content: '';
+        width: 68px;
+        height: 68px;
+        background: url('../../images/testimonials.png') center center;
+        position: absolute;
+        top: -27px;
+        left: -27px;
+    }
+    &__text {
+        font-weight: 500;
+        line-height: 32px;
+        color: $grey-color;
+    }
+    &__author {
+        font-weight: 600;
+        font-size: $fs-18;
+        line-height: 27px;
+        margin-top: 34px;
+    }
+    &__location {
+        font-weight: 500;
+        font-size: $fs-14;
+        line-height: 21px;
+        margin-top: 5px;
+    }
+}
