@@ -1,0 +1,233 @@
+.steps {
+    margin-top: 186px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.steps-content {
+    &__subtitle {
+        margin-bottom: 16px;
+        text-align: left;
+    }
+    &__title {
+        margin-bottom: 30px;
+        text-align: left;
+        width: 80%;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 48px;
+        width: 65%;
+    }
+    &__item {
+        color: $grey-color;
+        font-size: $fs-16;
+        line-height: 1.25;
+        position: relative;
+        padding-left: 68px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 48px;
+            height: 48px;
+            border-radius: 13px;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &:nth-of-type(1) {
+            &::before {
+                background-color: #F0BB1F;
+                background-image: url('../../icons/steps_choose_destination.svg');
+            }
+        }
+        &:nth-of-type(2) {
+            &::before {
+                background-color: #F15A2B;
+                background-image:  url('../../icons/steps_make_payment.svg');
+            }
+        }
+        &:nth-of-type(3) {
+            &::before {
+                background-color: #006380;
+                background-image: url('../../icons/steps_reach_aeroport.svg');
+            }
+        }
+       
+    }
+    &__item-title {
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+}
+
+.steps-card {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.steps-card-primary {
+    width: 370px;
+    margin-right: 120px;
+    background: $white-color;
+    @include box-shadow;
+    padding: 20px 25px 30px;
+    border-radius: 26px;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $grey-color;
+    &__image {
+        border: 1px solid $black-color;
+        border-radius: 24px;
+        margin-bottom: 26px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    &__title {
+        font-size: $fs-18;
+        color: $black-color;
+        margin-bottom: 13px;
+        font-weight: 500;
+    }
+    &__text {
+        letter-spacing: -0.005em;
+        margin-bottom: 20px;
+    }
+    &__icons {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__icon {
+        width: 36px;
+        height: 36px;
+        background-color:  #F5F5F5;
+        border-radius: 100%;
+        margin-right: 18px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+        &:nth-of-type(1) {
+            &::after {
+                background-image: url('../../icons/steps_card_leaf.svg');
+            }
+        }
+        &:nth-of-type(2) {
+            &::after {
+                background-image: url('../../icons/steps_card_map.svg');
+            }
+        }
+        &:nth-of-type(3) {
+            &::after {
+                background-image: url('../../icons/steps_card_send.svg');
+            }
+        }
+    }
+    &__going {
+        padding-left: 30px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            background: url('../../icons/steps_card_building.svg') center center no-repeat;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__heart {
+        width: 20px;
+        height: 20px;
+        background: url('../../icons/steps_card_heart.svg') center center no-repeat;
+    }
+}
+
+.steps-card-secondary {
+    position: absolute;
+    background: $white-color;
+    border-radius: 18px;
+    @include box-shadow;
+    width: 260px;
+    top: 55%;
+    right: 0;
+    padding: 16px 0;
+    padding-left: 80px;
+    font-weight: 500;
+    font-size: $fs-14;
+    line-height: 1.25;
+    &__subtitle {
+        letter-spacing: -0.035em;
+        color: $grey-color;
+        margin-bottom: 6px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: url('../../icons/temple_steps.png') center center no-repeat;
+            padding: 20px;
+        }
+    }
+    &__title {
+        font-size: $fs-18;
+        letter-spacing: -0.015em;
+        color: $black-color;
+        margin-bottom: 14px;
+        font-weight: 500;
+    }
+    &__progress {
+        color: $black-color;
+        margin-bottom: 10px;
+        span {
+            color: $violet-color;
+            letter-spacing: -0.055em
+        }
+    }
+    &__progress-bar {
+        width: 156px;
+        height: 5px;
+        background-color: #F5F5F5;
+        border-radius: 30px;
+        &_filled {
+            width: 40%;
+            height: 5px;
+            background-color: $violet-color;
+            border-radius: 3px;
+        }
+    }
+}
+.steps-card-shadow {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #59B1E6;
+    opacity: 0.8;
+    filter: blur(120px);
+    z-index: -1;
+}
