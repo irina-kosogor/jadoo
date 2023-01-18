@@ -57,11 +57,11 @@
         }
           
         a:hover {
-            color: red;
+            color: $red-color;
         }
           
         a:active {
-            color: yellow;
+            color: $dark-blue-color;
         }
     }
 }

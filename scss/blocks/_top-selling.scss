@@ -1,5 +1,5 @@
 .top-selling {
-    margin-top: 120px;
+    margin-top: 155px;
     text-transform: capitalize;
     &__sutitle {
         margin-bottom: 10px;
@@ -12,23 +12,27 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 46px;
+        position: relative;
+        &::after {
+            content: "";
+            background: url('../../images/decore_selling.svg') center center/cover no-repeat;
+            width: 100px;
+            height: 260px;
+            position: absolute;
+            top: 80px;
+            right: -65px;
+            z-index: -1;
+        }
     }
     &__card {
         min-height: 460px;
         @include box-shadow;;
         border-radius: 24px;
         position: relative;
-        &:last-of-type {
-            &::after {
-                content: "";
-                background: url('../../images/decore_selling.svg') center center/cover no-repeat;
-                width: 100px;
-                height: 260px;
-                position: absolute;
-                top: 40%;
-                right: -60px;
-                z-index: -1;
-            }
+        &:hover {
+            transition: all 1s ease-out;
+            transform: scale(1.2);
+            box-shadow: 0px 60px 60px rgba(0, 0, 0, 0.2);
         }
     }
 
