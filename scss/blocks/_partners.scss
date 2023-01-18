@@ -1,0 +1,29 @@
+.partners {
+    margin-top: 173px;
+    margin-bottom: 175px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__image {
+        filter: grayscale(100%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:hover {
+            filter: none;
+        }
+    }
+    &__link {
+        height: 100px;
+        width: 18%;
+        position: relative;
+        overflow: hidden;
+        &:hover {
+            @include box-shadow;
+            transition: all 100ms ease-in;
+            }
+        }
+    }
