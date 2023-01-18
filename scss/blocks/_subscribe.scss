@@ -1,14 +1,33 @@
 .subscribe {
     margin-top: 145px;
-    padding-bottom: 70px;
-    background: url('../../images/subscribe_decore.svg') bottom 0 right 55px no-repeat;
     &__wrapper {
         padding: 80px 155px;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
         border-radius: 129px 20px 20px 20px;
         background: url('../../images/subscribe_circle_decore.svg') bottom left -90px no-repeat, $light-violet-color url('../../images/subscribe_circle_decore_right.svg') top right no-repeat;
+        &::before {
+            content: '';
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background: url('../../icons/subscribe_send.svg') center center/50% no-repeat, linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);;
+            border-radius: 100%;
+            top: -20px;
+            right: -20px;
+        }
+        
+        &::after {
+            content: '';
+            width: 166px;
+            height: 166px;
+            position: absolute;
+            background: url('../../images/subscribe_decore.svg') center center no-repeat;
+            bottom: -75px;
+            right: -100px;
+        }
     }
     &__title {
         font-weight: 600;

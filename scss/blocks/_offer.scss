@@ -1,6 +1,5 @@
 .offer {
     margin-top: 96px;
-    background: url('../../images/decore_offer.svg') top 104px right 5vw no-repeat;
     &__sutitle {
         margin-bottom: 10px;
     }
@@ -14,6 +13,16 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         gap: 100px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 153px;
+            height: 166px;
+            position: absolute;
+            background: url('../../images/decore_offer.svg') center center no-repeat;
+            top: -218px;
+            right: -120px;
+        }
     }
 
     &__item {

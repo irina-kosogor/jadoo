@@ -220,14 +220,14 @@
     }
 }
 .steps-card-shadow {
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     border-radius: 100%;
     position: absolute;
     top: 0;
     right: 0;
     background: #59B1E6;
     opacity: 0.8;
-    filter: blur(120px);
+    filter: blur(100px);
     z-index: -1;
 }
