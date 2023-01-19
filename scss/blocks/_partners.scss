@@ -1,26 +1,36 @@
 .partners {
     margin-top: 173px;
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__image {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     &__link {
         height: 85px;
         width: 18%;
         position: relative;
         overflow: hidden;
         filter: grayscale(100%);
+
         &:hover {
             @include box-shadow;
             filter: none;
             transition: all 0.5s ease-in;
-            }
         }
     }
+}
+
+@media (max-width: $x-large-device-breakpoint) {
+    .partners {
+        margin-top: 130px;
+    }
+}

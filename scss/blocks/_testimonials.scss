@@ -6,6 +6,12 @@
     }
 }
 
+@media (max-width: $x-large-device-breakpoint) {
+    .testimonials {
+        margin-top: 130px;
+    }
+}
+
 .testimonials-titles {
     width: 410px;
     &__subtitle {

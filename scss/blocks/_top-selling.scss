@@ -24,6 +24,17 @@
             z-index: -1;
         }
     }
+
+    @media (max-width: $x-large-device-breakpoint) {
+        &__wrapper {
+            &::after {
+                top: 150px;
+                right: -60px;
+                background: url('../../images/decore_selling.svg') center center/80% no-repeat;
+            }
+        }
+    }
+
     &__card {
         min-height: 460px;
         @include box-shadow;;
@@ -71,5 +82,11 @@
             transform: translateY(-50%);
             left: 0;
         }
+    }
+}
+
+@media (max-width: $x-large-device-breakpoint) {
+    .top-selling {
+        margin-top: 100px;
     }
 }

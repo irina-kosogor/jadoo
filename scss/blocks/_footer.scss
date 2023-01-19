@@ -7,6 +7,12 @@
     }
 }
 
+@media (max-width: $x-large-device-breakpoint) {
+    .footer {
+        margin: 130px 0 50px;
+    }    
+}
+
 .footer-brand {
     width: 20%;
     &__name {

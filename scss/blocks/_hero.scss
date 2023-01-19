@@ -6,10 +6,19 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+    @media (max-width: $large-device-breakpoint) {
+        background: url('../../images/hero-traveller.png') top 2vh right/calc(100vh - 90px) no-repeat;
+    }
     
     &__content {
         width: 50%;
     }
+    @media (max-width: $large-device-breakpoint) {
+        &__content {
+            width: 45%;
+        }
+    }
+
 
     &__subtitle {
         font-family:  'Poppins', sans-serif;
@@ -29,6 +38,11 @@
         color: $dark-blue-color;
         margin-bottom: 30px;
     }
+    @media (max-width: $large-device-breakpoint) {
+        &__title {
+            font-size: 4.5em;
+        }
+    }
 
     &__text {
         font-family: 'Poppins';
@@ -38,6 +52,11 @@
         color: $grey-color;
         margin-bottom: 35px;
         max-width: 480px;
+    }
+    @media (max-width: $large-device-breakpoint) {
+        &__text {
+            max-width: 450px;
+        }
     }
 
     &__btns {

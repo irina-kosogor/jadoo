@@ -4,7 +4,7 @@
 @import 'base/variables';
 @import 'base/animations';
 
-body{
+body {
     background: url('../images/hero-decore.svg') top right no-repeat, url('../images/decore_main_circle.svg') bottom right no-repeat;
     font-family: 'Poppins', sans-serif;
 }
@@ -13,6 +13,40 @@ body{
     max-width: 1140px;
     margin: 0 auto;
 }
+
+@media (max-width: $x-large-device-breakpoint) {
+    .container {
+        max-width: 1140px;
+    }
+    body {
+        font-size: 14px;
+    }    
+}
+
+@media (max-width: $large-device-breakpoint) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: $medium-device-breakpoint) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: $x-small-device-breakpoint) {
+    .container {
+        max-width: 478px;
+    }
+}
+
 
 @import 'blocks/header';
 @import 'blocks/hero';

@@ -1,19 +1,28 @@
 .plane {
     position: absolute;
-   
-   &__left {
-    top: 10%;
-    right: 42%;
-    &:hover {
-        animation: 3s 1 plane-fly-left linear 600ms;
+
+    &__left {
+        top: 10%;
+        right: 42%;
+
+        &:hover {
+            animation: 3s 1 plane-fly-left linear 600ms;
+        }
     }
-   }
-   &__right {
+
+    &__right {
         top: 15%;
         right: 10%;
+
         // z-index: -1;
         &:hover {
             animation: 3s 1 plane-fly-right linear 600ms;
         }
-   }
+    }
+
+    @media (max-width: $large-device-breakpoint) {
+        &__right {
+            right: 2%;
+        }
+    }
 }

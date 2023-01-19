@@ -8,12 +8,13 @@
         justify-content: center;
         border-radius: 129px 20px 20px 20px;
         background: url('../../images/subscribe_circle_decore.svg') bottom left -90px no-repeat, $light-violet-color url('../../images/subscribe_circle_decore_right.svg') top right no-repeat;
+        max-width: 100vw;
         &::before {
             content: '';
             width: 70px;
             height: 70px;
             position: absolute;
-            background: url('../../icons/subscribe_send.svg') center center/50% no-repeat, linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);;
+            background: url('../../icons/subscribe_send.svg') 55% 55%/50% no-repeat, linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);;
             border-radius: 100%;
             top: -20px;
             right: -20px;
@@ -29,6 +30,19 @@
             right: -100px;
         }
     }
+
+    @media (max-width: $x-large-device-breakpoint) {
+        &__wrapper {
+            &::after {
+                width: 133px;
+                height: 133px;
+                background: url('../../images/subscribe_decore.svg') center center/80% no-repeat;
+                bottom: -55px;
+                right: -75px;
+            }
+        }
+    }
+
     &__title {
         font-weight: 600;
         font-size: $fs-33;
@@ -36,6 +50,12 @@
         text-align: center;
         color: #5E6282;
         margin-bottom: 74px;
+    }
+}
+
+@media (max-width: $x-large-device-breakpoint) {
+    .subscribe {
+        margin-top: 130px;
     }
 }
 

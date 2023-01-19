@@ -6,6 +6,12 @@
     }
 }
 
+@media (max-width: $x-large-device-breakpoint) {
+    .steps {
+        margin-top: 140px;
+    }
+}
+
 .steps-content {
     &__subtitle {
         margin-bottom: 16px;
@@ -230,4 +236,10 @@
     opacity: 0.8;
     filter: blur(100px);
     z-index: -1;
+}
+@media (max-width: $x-large-device-breakpoint) {
+    .steps-card-shadow {
+        width: 200px;
+        height: 200px;
+    }
 }
