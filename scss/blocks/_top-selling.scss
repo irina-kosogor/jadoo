@@ -7,6 +7,16 @@
     &__title {
         margin-bottom: 60px;
     }
+    @media (max-width: $large-device-breakpoint) {
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -19,24 +29,40 @@
             width: 100px;
             height: 260px;
             position: absolute;
-            top: 80px;
-            right: -65px;
+            top: 30%;
+            right: -50px;
             z-index: -1;
         }
     }
 
-    @media (max-width: $x-large-device-breakpoint) {
+    @media (max-width: $large-device-breakpoint) {
         &__wrapper {
+            gap: 26px;
             &::after {
-                top: 150px;
+                top: 35%;
                 right: -60px;
                 background: url('../../images/decore_selling.svg') center center/80% no-repeat;
             }
         }
     }
+    @media (max-width: $medium-device-breakpoint) {
+        &__wrapper {
+            &::after {
+               display: none;
+            }
+        }
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__wrapper {
+            grid-template-columns: 60%;
+            grid-template-rows: auto;
+            justify-content: center;
+            gap: 30px;
+        }
+    }
 
     &__card {
-        min-height: 460px;
+        height: 100%;
         @include box-shadow;;
         border-radius: 24px;
         position: relative;
@@ -44,6 +70,14 @@
             transition: all 1s ease-out;
             transform: scale(1.2);
             box-shadow: 0px 60px 60px rgba(0, 0, 0, 0.2);
+        }
+    }
+    @media (max-width: $large-device-breakpoint) {
+        &__card {
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.2);
+            }
         }
     }
 
@@ -64,6 +98,16 @@
         color: $grey-color;
         border-radius: 0  0 24px 24px;
     }
+    @media (max-width: $medium-device-breakpoint) {
+       &__card-body {
+        padding: 20px;
+       }
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__card-body {
+         padding: 25px;
+        }
+     }
     &__card-content {
         display: flex;
         justify-content: space-between;
@@ -85,8 +129,14 @@
     }
 }
 
-@media (max-width: $x-large-device-breakpoint) {
+@media (max-width: $large-device-breakpoint) {
     .top-selling {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: $medium-device-breakpoint) {
+    .top-selling {
+        margin-top: 40px;
     }
 }

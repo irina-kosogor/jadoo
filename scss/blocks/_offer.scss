@@ -13,6 +13,16 @@
             margin-bottom: 50px;
         }
     }
+    @media (max-width: $medium-device-breakpoint) {
+        &__title {
+            margin-bottom: 30px;
+        }
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__title {
+            margin-bottom: 10px;
+        }
+    }
 
     &__wrapper {
         display: grid;
@@ -28,7 +38,7 @@
             position: absolute;
             background: url('../../images/decore_offer.svg') center center/100% no-repeat;
             top: -218px;
-            right: -3%;
+            right: 0;
         }
     }
     @media (max-width: $large-device-breakpoint) {
@@ -38,6 +48,27 @@
                 right: -20px;
                 width: 122px;
                 height: 133px;
+            }
+        }
+    }
+    @media (max-width: $medium-device-breakpoint) {
+        &__wrapper {
+            grid-template-columns: (1fr 1fr);
+            &::after {
+                top: -130px;
+                right: -20px;
+                width: 112px;
+                height: 123px;
+            }
+        }
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__wrapper {
+            grid-template-columns: 300px;
+            justify-content: center;
+            gap: 15px;
+            &::after {
+                display: none;
             }
         }
     }
@@ -67,6 +98,16 @@
                 z-index: -1;
                 animation: scale-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
+        }
+    }
+    @media (max-width: $medium-device-breakpoint) {
+        &__item {
+            padding: 20px;
+        }
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__item {
+            padding: 10px;
         }
     }
 
@@ -139,5 +180,20 @@
         color: $grey-color;
         font-weight: 500;
         line-height: 26px;
+    }
+}
+@media (max-width: $large-device-breakpoint) {
+    .offer {
+        margin-top: 70px;
+    }
+}
+@media (max-width: $medium-device-breakpoint) {
+    .offer {
+        margin-top: 40px;
+    }
+}
+@media (max-width: $small-device-breakpoint) {
+    .offer {
+        margin-top: 20px;
     }
 }

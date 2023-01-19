@@ -5,11 +5,22 @@
         justify-content: space-between;
         margin-bottom: 84px;
     }
+    @media (max-width: $large-device-breakpoint) {
+        &__wrapper {
+            margin-bottom: 50px;
+        }  
+    }
 }
 
-@media (max-width: $x-large-device-breakpoint) {
+@media (max-width: $large-device-breakpoint) {
     .footer {
         margin: 130px 0 50px;
+    }    
+}
+
+@media (max-width: $large-device-breakpoint) {
+    .footer {
+        margin: 80px 0 50px;
     }    
 }
 

@@ -1,5 +1,11 @@
 .header {
-    padding-top: 47px;   
+    padding-top: 47px;
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .header {
+        padding-top: 30px;
+    }
 }
 
 .navbar {
@@ -24,47 +30,81 @@
     width: 70%;
 }
 
+@media (max-width: $small-device-breakpoint) {
+    .navbar__inner {
+        width: 50%;
+    }
+}
+
 .menu {
     width: 55%;
+
     &__items {
         display: flex;
         justify-content: space-between;
     }
+
     &__item {
         &:hover {
             transition: all .4s linear;
             transform: scale(1.2);
         }
+
         a:link {
             font-weight: 500;
             color: $dark-grey-color;
         }
+
         a:visited {
             color: $dark-grey-color;
         }
+
         a:hover {
             color: $red-color;
         }
+
         a:active {
-            color:  $dark-grey-color
+            color: $dark-grey-color
         }
     }
 }
+
+@media (max-width: $small-device-breakpoint) {
+    .menu {
+        display: none;
+    }
+}
+
 
 .authorize {
     display: flex;
     justify-content: space-between;
     width: 25%;
+    gap: 5%;
+
     &__btn {
         background: transparent;
         border: none;
         cursor: pointer;
+
         &_bordered {
             padding: 10px 22px;
             border: 1px solid $dark-grey-color;
             border-radius: 5px;
             white-space: nowrap;
         }
+
+        @media (max-width: $small-device-breakpoint) {
+            &_bordered {
+                padding: 8px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .authorize {
+        width: 60%;
     }
 }
 
@@ -75,6 +115,7 @@
         position: relative;
         cursor: pointer;
         padding-right: 16px;
+
         &::after {
             content: '';
             position: absolute;
@@ -84,6 +125,37 @@
             right: 0%;
             width: 9px;
             height: 5px;
+        }
+    }
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .hamburger {
+        display: block;
+        width: 10%;
+        height: 20px;
+        &__btn {
+            width: 100%;
+            height: 20px;
+            background-color: transparent; 
+            border: none;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                content: "";
+                height: 2px;
+                border-radius: 30px;
+                box-shadow: 0 5px 0 0 $dark-grey-color, 0 10px 0 0 $dark-grey-color;
+                width: 100%;
+                position: absolute;
+                background: $dark-grey-color;
+                left: 0;
+                top: 0;
+            }
         }
     }
 }

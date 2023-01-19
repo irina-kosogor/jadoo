@@ -6,9 +6,19 @@
     }
 }
 
-@media (max-width: $x-large-device-breakpoint) {
+@media (max-width: $large-device-breakpoint) {
     .steps {
         margin-top: 140px;
+    }
+}
+@media (max-width: $medium-device-breakpoint) {
+    .steps {
+        margin-top: 80px;
+    }
+}
+@media (max-width: $small-device-breakpoint) {
+    .steps {
+        margin-top: 60px;
     }
 }
 
@@ -22,6 +32,11 @@
         text-align: left;
         width: 80%;
     }
+    @media (max-width: $large-device-breakpoint) {
+        &__title {
+            width: 85%;
+        }
+    }
     &__items {
         display: flex;
         flex-direction: column;
@@ -29,6 +44,17 @@
         gap: 48px;
         width: 65%;
     }
+    @media (max-width: $large-device-breakpoint) {
+        &__items {
+            width: 80%;
+        }
+    }
+    @media (max-width: $medium-device-breakpoint) {
+        &__items {
+            width: 90%;
+        }
+    }
+
     &__item {
         color: $grey-color;
         font-size: $fs-16;
@@ -76,6 +102,11 @@
     display: flex;
     align-items: center;
     position: relative;
+}
+@media (max-width: $medium-device-breakpoint) {
+    .steps-card {
+        display: none;
+    }
 }
 
 .steps-card-primary {
@@ -168,6 +199,19 @@
     }
 }
 
+@media (max-width: $large-device-breakpoint) {
+    .steps-card-primary {
+        width: 350px;
+        margin-right: 60px;
+    }
+}
+@media (max-width: $medium-device-breakpoint) {
+    .steps-card-primary {
+        width: 250px;
+        margin-right: 60px;
+    }
+}
+
 .steps-card-secondary {
     position: absolute;
     background: $white-color;
@@ -213,7 +257,7 @@
         }
     }
     &__progress-bar {
-        width: 156px;
+        width: 80%;
         height: 5px;
         background-color: #F5F5F5;
         border-radius: 30px;
@@ -225,6 +269,16 @@
         }
     }
 }
+
+@media (max-width: $medium-device-breakpoint) {
+    .steps-card-secondary {
+        width: 200px;
+        margin-right: 60px;
+        top: 75%;
+        right: -60px;
+    }
+}
+
 .steps-card-shadow {
     width: 230px;
     height: 230px;
@@ -237,9 +291,9 @@
     filter: blur(100px);
     z-index: -1;
 }
-@media (max-width: $x-large-device-breakpoint) {
+@media (max-width: $large-device-breakpoint) {
     .steps-card-shadow {
-        width: 200px;
+        width: 160px;
         height: 200px;
     }
 }
