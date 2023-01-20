@@ -31,7 +31,7 @@ body {
     body {
         font-size: 12px;
         overflow-x: hidden;
-        background: url('../images/hero-decore.svg') top right/50% no-repeat, url('../images/decore_main_circle.svg') bottom right/40% no-repeat;
+        background: url('../images/decore_main_circle_hero.svg') top left no-repeat, url('../images/hero-decore.svg') top right/50% no-repeat, url('../images/decore_main_circle.svg') bottom right/40% no-repeat;
     }    
     .container {
         max-width: 720px;
@@ -43,17 +43,21 @@ body {
     body {
         font-size: 13px;
         overflow-x: hidden;
-        background: url('../images/hero-decore.svg') top right/55% no-repeat, url('../images/decore_main_circle.svg') bottom right/40% no-repeat;
+        background: url('../images/decore_main_circle_hero.svg') top left no-repeat, url('../images/hero-decore.svg') top right/55% no-repeat, url('../images/decore_main_circle.svg') bottom right/40% no-repeat;
     }    
     .container {
-        max-width: 540px;
         padding: 0 30px;
     }
 }
 
 @media (max-width: $x-small-device-breakpoint) {
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+        background: url('../images/decore_main_circle_hero.svg') top left no-repeat, url('../images/hero-decore.svg') top right/55% no-repeat, url('../images/decore_main_circle.svg') bottom right/40% no-repeat;
+    }    
     .container {
-        max-width: 470px;
+        padding: 0 10px;
     }
 }
 

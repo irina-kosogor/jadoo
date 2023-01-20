@@ -16,3 +16,9 @@
     text-transform: capitalize;
     color: $dark-blue-color;
 }
+
+@media (max-width: $small-device-breakpoint) {
+    .title-primary {
+        line-height: 1.2;
+    }    
+}

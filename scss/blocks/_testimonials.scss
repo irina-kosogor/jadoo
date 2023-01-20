@@ -34,8 +34,24 @@
         text-align: left;
         margin-bottom: 8px;
     }
+    @media (max-width: $small-device-breakpoint) {
+        &__subtitle {
+            text-align: center;
+        }
+    }
     &__title {
         text-align: left;
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__title {
+            text-align: center;
+        }
+    }
+}
+@media (max-width: $small-device-breakpoint) {
+    .testimonials-titles {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -62,11 +78,21 @@
         line-height: 32px;
         color: $grey-color;
     }
+    @media (max-width: $small-device-breakpoint) {
+        &__text {
+            line-height: 28px;
+        }
+    }
     &__author {
         font-weight: 600;
         font-size: $fs-18;
         line-height: 27px;
         margin-top: 34px;
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__author {
+            margin-top: 20px;
+        }
     }
     &__location {
         font-weight: 500;
@@ -77,7 +103,7 @@
 }
 @media (max-width: $small-device-breakpoint) {
     .testimonials-card {
-        width: 300px;
+        width: 80%;
         align-self: center;
     }
 }

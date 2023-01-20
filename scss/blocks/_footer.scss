@@ -10,6 +10,17 @@
             margin-bottom: 50px;
         }  
     }
+    @media (max-width: $medium-device-breakpoint) {
+        &__wrapper {
+            margin-bottom: 40px;
+        }  
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__wrapper {
+            margin-bottom: 20px;
+            flex-direction: column;
+        }  
+    }
 }
 
 @media (max-width: $large-device-breakpoint) {
@@ -18,9 +29,15 @@
     }    
 }
 
-@media (max-width: $large-device-breakpoint) {
+@media (max-width: $medium-device-breakpoint) {
     .footer {
         margin: 80px 0 50px;
+    }    
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .footer {
+        margin: 40px 0;
     }    
 }
 
@@ -33,12 +50,25 @@
         color: #181E4B;
         margin-bottom: 20px;
     }
+    @media (max-width: $small-device-breakpoint) {
+        &__name {
+            margin-bottom: 10px;
+            line-height: 40px;
+        }    
+    }
     &__moto {
         color: $grey-color;
         font-weight: 500;
         font-size: $fs-13;
         line-height: 1.25;
     }
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .footer-brand {
+        width: 100%;
+        text-align: center;
+    }    
 }
 
 .footer-nav-menu {
@@ -83,6 +113,12 @@
     }
 }
 
+@media (max-width: $small-device-breakpoint) {
+    .footer-nav-menu {
+        display: none;
+    }
+}
+
 .footer-social-and-apps {
     display: flex;
     flex-direction: column;
@@ -91,6 +127,11 @@
         display: flex;
         gap: 25px;
         margin-bottom: 26px;
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__icons {
+            align-self: center;
+        }
     }
     &_circle {
         display: block;
@@ -119,9 +160,26 @@
         color: #5E6282;
         margin-bottom: 16px;
     }
+    @media (max-width: $small-device-breakpoint) {
+        &__title {
+            text-align: center;
+            margin-bottom: 26px;
+        }
+    }
     &__wrapper {
         display: flex;
         gap: 10px;
+    }
+    @media (max-width: $small-device-breakpoint) {
+        &__wrapper {
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: $small-device-breakpoint) {
+    .footer-social-and-apps {
+        align-self: center;
     }
 }
 
