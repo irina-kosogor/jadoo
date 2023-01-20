@@ -93,19 +93,19 @@
         &:nth-of-type(1) {
             &::before {
                 background-color: #F0BB1F;
-                background-image: url('../../icons/steps_choose_destination.svg');
+                background-image: url('../icons/steps_choose_destination.svg');
             }
         }
         &:nth-of-type(2) {
             &::before {
                 background-color: #F15A2B;
-                background-image:  url('../../icons/steps_make_payment.svg');
+                background-image:  url('../icons/steps_make_payment.svg');
             }
         }
         &:nth-of-type(3) {
             &::before {
                 background-color: #006380;
-                background-image: url('../../icons/steps_reach_aeroport.svg');
+                background-image: url('../icons/steps_reach_aeroport.svg');
             }
         }
        
@@ -177,17 +177,17 @@
         }
         &:nth-of-type(1) {
             &::after {
-                background-image: url('../../icons/steps_card_leaf.svg');
+                background-image: url('../icons/steps_card_leaf.svg');
             }
         }
         &:nth-of-type(2) {
             &::after {
-                background-image: url('../../icons/steps_card_map.svg');
+                background-image: url('../icons/steps_card_map.svg');
             }
         }
         &:nth-of-type(3) {
             &::after {
-                background-image: url('../../icons/steps_card_send.svg');
+                background-image: url('../icons/steps_card_send.svg');
             }
         }
     }
@@ -198,7 +198,7 @@
             content: '';
             width: 18px;
             height: 18px;
-            background: url('../../icons/steps_card_building.svg') center center no-repeat;
+            background: url('../icons/steps_card_building.svg') center center no-repeat;
             position: absolute;
             left: 0;
             top: 50%;
@@ -213,7 +213,7 @@
     &__heart {
         width: 20px;
         height: 20px;
-        background: url('../../icons/steps_card_heart.svg') center center no-repeat;
+        background: url('../icons/steps_card_heart.svg') center center no-repeat;
     }
 }
 
@@ -255,7 +255,7 @@
             width: 50px;
             height: 50px;
             border-radius: 100%;
-            background: url('../../icons/temple_steps.png') center center no-repeat;
+            background: url('../icons/temple_steps.png') center center no-repeat;
             padding: 20px;
         }
     }

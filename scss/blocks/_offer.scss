@@ -36,7 +36,7 @@
             width: 153px;
             height: 166px;
             position: absolute;
-            background: url('../../images/decore_offer.svg') center center/100% no-repeat;
+            background: url('../images/decore_offer.svg') center center/100% no-repeat;
             top: -218px;
             right: 0;
         }
@@ -123,7 +123,7 @@
         z-index: 1;
 
         &_satelite {
-            background: url('../../icons/satellite-dish.svg') center center no-repeat;
+            background: url('../icons/satellite-dish.svg') center center no-repeat;
             width: 70px;
             height: 70px;
             position: relative;
@@ -135,7 +135,7 @@
             }
         }
         &_plane {
-            background: url('../../icons/plane.svg') center center no-repeat;
+            background: url('../icons/plane.svg') center center no-repeat;
             width: 130px;
             height: 95px;
             position: relative;
@@ -147,7 +147,7 @@
             }
         }
         &_micorphone {
-            background: url('../../icons/microphone.png') center center no-repeat;
+            background: url('../icons/microphone.png') center center no-repeat;
             width: 40px;
             height: 70px;
             position: relative;
@@ -158,7 +158,7 @@
             }
         }
         &_power-supply {
-            background: url('../../icons/power-supply.svg') center center no-repeat;
+            background: url('../icons/power-supply.svg') center center no-repeat;
             width: 50px;
             height: 50px;
             position: relative;

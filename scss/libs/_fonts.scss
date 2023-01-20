@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.eot');
+    src: local('Poppins Regular'), local('Poppins-Regular'),
+        url('../fonts/poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Medium.eot');
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+        url('../fonts/poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-Medium.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-SemiBold.eot');
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+        url('../fonts/poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-SemiBold.woff') format('woff'),
+        url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Bold.eot');
+    src: local('Poppins Bold'), local('Poppins-Bold'),
+        url('../fonts/poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/poppins/Poppins-Bold.woff') format('woff'),
+        url('../fonts/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volkhov';
+    src: url('../fonts/volkhov/Volkhov-Bold.eot');
+    src: url('../fonts/volkhov/Volkhov-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/volkhov/Volkhov-Bold.woff2') format('woff2'),
+        url('../fonts/volkhov/Volkhov-Bold.woff') format('woff'),
+        url('../fonts/volkhov/Volkhov-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/google_sans/GoogleSans-Regular.eot');
+    src: local('Google Sans Regular'), local('GoogleSans-Regular'),
+        url('../fonts/google_sans/GoogleSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/google_sans/GoogleSans-Regular.woff2') format('woff2'),
+        url('../fonts/google_sans/GoogleSans-Regular.woff') format('woff'),
+        url('../fonts/google_sans/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Google Sans';
+    src: url('../fonts/google_sans/GoogleSans-Medium.eot');
+    src: local('Google Sans Medium'), local('GoogleSans-Medium'),
+        url('../fonts/google_sans/GoogleSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/google_sans/GoogleSans-Medium.woff2') format('woff2'),
+        url('../fonts/google_sans/GoogleSans-Medium.woff') format('woff'),
+        url('../fonts/google_sans/GoogleSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

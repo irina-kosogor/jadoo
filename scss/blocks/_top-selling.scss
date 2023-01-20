@@ -25,7 +25,7 @@
         position: relative;
         &::after {
             content: "";
-            background: url('../../images/decore_selling.svg') center center/cover no-repeat;
+            background: url('../images/decore_selling.svg') center center/cover no-repeat;
             width: 100px;
             height: 260px;
             position: absolute;
@@ -41,7 +41,7 @@
             &::after {
                 top: 35%;
                 right: -60px;
-                background: url('../../images/decore_selling.svg') center center/80% no-repeat;
+                background: url('../images/decore_selling.svg') center center/80% no-repeat;
             }
         }
     }
@@ -131,7 +131,7 @@
             content: '';
             width: 20px;
             height: 20px;
-            background: url('../../icons/navigation.svg') center center/cover no-repeat;
+            background: url('../icons/navigation.svg') center center/cover no-repeat;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
