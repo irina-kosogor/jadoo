@@ -236,7 +236,7 @@
     border-radius: 18px;
     @include box-shadow;
     width: 260px;
-    top: 55%;
+    top: 54%;
     right: 0;
     padding: 16px 0;
     padding-left: 80px;
@@ -288,11 +288,18 @@
     }
 }
 
+@media (max-width: $large-device-breakpoint) {
+    .steps-card-secondary {
+        width: 60%;
+        margin-right: 70px;
+        top: 55%;
+        right: -90px;
+    }
+}
 @media (max-width: $medium-device-breakpoint) {
     .steps-card-secondary {
-        width: 200px;
-        margin-right: 70px;
-        top: 400px;
+        width: 70%;
+        top: 75%;
         right: -70px;
     }
 }

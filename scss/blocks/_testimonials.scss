@@ -29,7 +29,7 @@
 }
 
 .testimonials-titles {
-    width: 410px;
+    width: 40%;
     &__subtitle {
         text-align: left;
         margin-bottom: 8px;
@@ -56,7 +56,7 @@
 }
 
 .testimonials-card {
-    width: 505px;
+    width: 45%;
     @include box-shadow;
     padding: 28px 34px;
     border-radius: 10px;
