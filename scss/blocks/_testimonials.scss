@@ -68,7 +68,7 @@
         content: '';
         width: 68px;
         height: 68px;
-        background: url('../images/testimonials.png') center center;
+        background: url('../images/testimonials.png') center center/contain no-repeat;
         position: absolute;
         top: -27px;
         left: -27px;

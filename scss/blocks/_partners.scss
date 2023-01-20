@@ -30,6 +30,10 @@
     @media (max-width: $medium-device-breakpoint) {
         &__link {
             filter: none;
+            &:hover {
+                box-shadow: none;
+                transition: none;
+            }
         }
     }
     @media (max-width: $small-device-breakpoint) {
