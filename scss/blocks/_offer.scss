@@ -64,7 +64,7 @@
     }
     @media (max-width: $small-device-breakpoint) {
         &__wrapper {
-            grid-template-columns: 100%;
+            grid-template-columns: 80%;
             justify-content: center;
             gap: 15px;
             &::after {
