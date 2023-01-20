@@ -1,7 +1,7 @@
 .hero {
     margin-top: 20px;
     padding: 118px 0;
-    background: url('../images/hero-traveller.png') top right 4vw/contain no-repeat;
+    background: url('../images/hero-traveller.png') top right 25%/contain no-repeat;
     position: relative;
     overflow: hidden;
 
@@ -115,6 +115,12 @@
     }
 }
 
+@media (max-width: $x-large-device-breakpoint) {
+    .hero {
+        padding: 80px 0;
+        background: url('../images/hero-traveller.png') top right 15%/contain no-repeat;
+    }
+}
 @media (max-width: $large-device-breakpoint) {
     .hero {
         padding: 80px 0;

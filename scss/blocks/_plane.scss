@@ -34,13 +34,18 @@
 
     &__right {
         top: 15%;
-        right: 6%;
+        right: 14%;
         z-index: -1;
         // &:hover {
         //     animation: 3s 1 plane-fly-right linear 600ms;
         // }
     }
 
+    @media (max-width: $x-large-device-breakpoint) {
+        &__right {
+            right: 6%;
+        }
+    }
     @media (max-width: $large-device-breakpoint) {
         &__right {
             width: 110px;
