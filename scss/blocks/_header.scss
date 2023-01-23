@@ -86,16 +86,23 @@
     justify-content: space-between;
     width: 25%;
     gap: 5%;
-
     &__btn {
         background: transparent;
         border: none;
         cursor: pointer;
+        &:hover {
+            transition: all .4s linear;
+            transform: scale(1.2);
+            color: $red-color;
+        }
         &_bordered {
             padding: 10px 22px;
             border: 1px solid $dark-grey-color;
             border-radius: 5px;
             white-space: nowrap;
+            &:hover {
+                border: 1px solid $red-color;
+            }
         }
 
         @media (max-width: $small-device-breakpoint) {
@@ -126,11 +133,18 @@
         position: relative;
         cursor: pointer;
         padding-right: 16px;
-
+        &:hover {
+            transition: all .4s linear;
+            transform: scale(1.2);
+            color: $red-color;
+            &::after {
+                background: url('../icons/arrow_down_red.svg') center center no-repeat;
+            }
+        }
         &::after {
             content: '';
             position: absolute;
-            background-image: url('../icons/arrow_down.svg');
+            background: url('../icons/arrow_down.svg') center center no-repeat;
             top: 50%;
             transform: translateY(-50%);
             right: 0%;
